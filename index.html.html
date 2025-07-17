@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Inaflas - Services</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 20px;
+      direction: ltr;
+      text-align: center;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #007acc;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    h2 {
+      margin-top: 30px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 12px 0;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    ul li img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .prices {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+    .price-box {
+      background: #e7f3ff;
+      padding: 15px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .price-box h3 {
+      margin: 0 0 10px 0;
+      color: #004a99;
+      font-size: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 20px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background-color: #005a99;
+    }
+    .contact-links a {
+      display: block;
+      margin: 8px 0;
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 15px;
+    }
+    .lang-switch button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 1px solid #007acc;
+      background-color: #fff;
+      color: #007acc;
+    }
+    @media (max-width: 480px) {
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+      .btn { font-size: 14px; padding: 10px 16px; }
+      .price-box h3 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switch">
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+    <button onclick="setLanguage('ar')">🇲🇦 العربية</button>
+  </div>
+
+  <div class="container" id="content-en">
+    <h1>Ali Inaflas</h1>
+    <p>My digital services to get freelance opportunities online</p>
+    <h2>Skills</h2>
+    <ul>
+      <li><img src="https://img.icons8.com/color/48/000000/pen.png" alt="Writing" /> Article Writing</li>
+      <li><img src="https://img.icons8.com/color/48/000000/data-in-both-directions.png" alt="Data Entry" /> Data Entry</li>
+      <li><img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" /> HTML Page Design</li>
+    </ul>
+    <h2>Prices</h2>
+    <div class="prices">
+      <div class="price-box">
+        <h3>Article Writing</h3>
+        <p>From $2 to $5</p>
+      </div>
+      <div class="price-box">
+        <h3>HTML Page Design</h3>
+        <p>From $5 to $15</p>
+      </div>
+    </div>
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+      <a href="https://instagram.com/ali_inaflas" target="_blank">📸 Instagram: ali_inaflas</a>
+      <a href="https://www.tiktok.com/@ali.inaflas" target="_blank">🎵 TikTok: AliiTV</a>
+      <a href="https://www.facebook.com/streamsaliinaflas" target="_blank">📘 Facebook: streams ali inaflas</a>
+      <a href="tel:+212637375631">📞 Phone: +212 637 375 631</a>
+      <a href="mailto:aliomarao656883@gmail.com" class="btn">✉️ Email Me</a>
+    </div>
+    <a href="cv-ali.html" class="btn">📄 View My CV</a>
+  </div>
+
+  <div class="container" id="content-ar" style="display:none; direction: rtl; text-align: right;">
+    <h1>علي إنفلاس</h1>
+    <p>خدماتي الرقمية للحصول على فرص عمل حر عبر الإنترنت</p>
+    <h2>المهارات</h2>
+    <ul>
+      <li><img src="https://img.icons8.com/color/48/000000/pen.png" alt="الكتابة" /> كتابة المقالات</li>
+      <li><img src="https://img.icons8.com/color/48/000000/data-in-both-directions.png" alt="إدخال البيانات" /> إدخال البيانات</li>
+      <li><img src="https://img.icons8.com/color/48/000000/html-5.png" alt="تصميم HTML" /> تصميم صفحات HTML</li>
+    </ul>
+    <h2>الأسعار</h2>
+    <div class="prices">
+      <div class="price-box">
+        <h3>كتابة المقالات</h3>
+        <p>من 2 إلى 5 دولار</p>
+      </div>
+      <div class="price-box">
+        <h3>تصميم صفحات HTML</h3>
+        <p>من 5 إلى 15 دولار</p>
+      </div>
+    </div>
+    <h2>تواصل معي</h2>
+    <div class="contact-links">
+      <a href="https://instagram.com/ali_inaflas" target="_blank">📸 إنستغرام: ali_inaflas</a>
+      <a href="https://www.tiktok.com/@ali.inaflas" target="_blank">🎵 تيكتوك: AliiTV</a>
+      <a href="https://www.facebook.com/streamsaliinaflas" target="_blank">📘 فيسبوك: streams ali inaflas</a>
+      <a href="tel:+212637375631">📞 الهاتف: +212 637 375 631</a>
+      <a href="mailto:aliomarao656883@gmail.com" class="btn">✉️ راسلني عبر الإيميل</a>
+    </div>
+    <a href="cv-ali.html" class="btn">📄 عرض السيرة الذاتية</a>
+  </div>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById("content-en").style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById("content-ar").style.display = lang === 'ar' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
